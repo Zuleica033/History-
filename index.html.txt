@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Historias en la Cumbre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #f2f2f2;
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.7;
+    }
+    header {
+      background-color: #1a1a1a;
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 2px solid #800000;
+    }
+    header h1 {
+      font-family: 'Cinzel', serif;
+      color: #d94f4f;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1em;
+      color: #ccc;
+    }
+    .capitulo {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #191919;
+      border-left: 5px solid #800000;
+      border-radius: 8px;
+    }
+    .capitulo h2 {
+      color: #ff4d4d;
+      font-family: 'Cinzel', serif;
+    }
+    .capitulo img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+      margin-top: 15px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .capitulo p {
+      margin-top: 15px;
+    }
+    .btn-ver {
+      display: block;
+      margin: 30px auto;
+      padding: 12px 24px;
+      background-color: #800000;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn-ver:hover {
+      background-color: #a30000;
+    }
+    #capitulos-futuros {
+      display: none;
+    }
+    .formulario {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 30px;
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      border-left: 5px solid #800000;
+    }
+    .formulario h2 {
+      color: #ff4d4d;
+      font-family: 'Cinzel', serif;
+      margin-bottom: 10px;
+    }
+    .formulario input, .formulario select, .formulario button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    .formulario input, .formulario select {
+      background-color: #333;
+      color: white;
+    }
+    .formulario button {
+      background-color: #800000;
+      color: white;
+      cursor: pointer;
+    }
+    .formulario button:hover {
+      background-color: #a30000;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
+      border-top: 1px solid #333;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Historias en la Cumbre</h1>
+    <p>Una experiencia que empezó con un atardecer... y terminó con algo que aún nos persigue.</p>
+  </header>
+
+  <section class="capitulo">
+    <h2>Capítulo 1: El atardecer dorado</h2>
+    <img src="furgoia.png" alt="Atardecer en la cumbre">
+    <p>Llegaron a la cumbre de Gran Canaria con el sol cayendo lentamente sobre el horizonte. Aparcaron la furgo en un claro junto al borde de un acantilado. Desde allí, el mar de nubes parecía un océano inmóvil.</p>
+    <p>El cielo se encendía en naranjas intensos y violetas profundos. El silencio era tan puro que podía escucharse el murmullo del viento rozando las agujas de los pinos. Sentían una paz difícil de describir.</p>
+    <p>Mientras cenaban dentro de la furgoneta, con la puerta abierta y una manta sobre las piernas, pensaban lo afortunados que eran de estar allí. La cumbre les regalaba calma…</p>
+    <p>Pero no sabían que esa misma noche, la montaña les mostraría algo muy diferente.</p>
+  </section>
+
+  <section class="capitulo">
+    <h2>Capítulo 2: El silencio espeso</h2>
+    <img src="furgoniebla.png" alt="Silencio en la cumbre">
+    <p>La oscuridad llegó sin aviso. La temperatura bajó de golpe y la niebla se levantó como un suspiro que emergía del suelo. Cerraron la furgo, bajaron las cortinas y pusieron algo de música para dormir.</p>
+    <p>Pero entonces lo notaron. El silencio había cambiado. Ya no era relajante. Era denso, casi físico. Como si algo se hubiese detenido allá fuera.</p>
+    <p>Y luego, un golpe. Seco. En la parte trasera de la furgoneta.</p>
+    <p>Pensaron que podía ser una rama… hasta que sonó otro. Más fuerte. Y después, pasos. Lentos, arrastrados. Rodeando la furgo como si alguien inspeccionara cada centímetro.</p>
+    <p>Miraron por la rendija de la ventana. Niebla espesa. No se veía nada. Pero sentían claramente que no estaban solos.</p>
+  </section>
+
+  <button class="btn-ver" onclick="document.getElementById('capitulos-futuros').style.display='block'; this.style.display='none';">
+    Ver próximos capítulos
+  </button>
+
+  <div id="capitulos-futuros">
+    <section class="capitulo">
+      <h2>Capítulo 3: La sombra en la niebla</h2>
+      <img src="dentro.png" alt="Sombra en la niebla">
+      <p>La niebla se espesó aún más, oscureciendo el entorno. Fuera, un crujido bajo la tierra comenzó a resonar, como si algo estuviera caminando, acechando.</p>
+      <p>Zule se abrazó a Christian mientras ambos miraban a través de la ventana, sin poder distinguir nada más allá de la densa niebla.</p>
+      <p>De repente, una figura difusa apareció, caminando lentamente hacia la furgoneta. No podían ver su rostro, pero el miedo se apoderó de ellos.</p>
+      <p>Christian trató de encender el motor, pero no arrancaba. La figura se acercó cada vez más.</p>
+    </section>
+
+    <section class="capitulo">
+      <h2>Capítulo 4: El susurro</h2>
+      <img src="silueta.jpeg" alt="Susurro en la niebla">
+      <p>El viento se levantó, trayendo consigo un susurro suave, como si alguien hablara muy cerca de la furgoneta. Zule miró a Christian, pero él no respondió. La ansiedad crecía.</p>
+      <p>La figura, ahora más cercana, se detuvo frente a la furgoneta. El susurro se hizo más fuerte, pero las palabras eran incomprensibles.</p>
+      <p>La puerta de la furgoneta comenzó a temblar levemente, como si alguien intentara abrirla desde afuera. Ambos se quedaron en silencio, esperando lo peor.</p>
+    </section>
+  </div>
+
+  <section class="formulario">
+    <h2>Propón tu historia</h2>
+    <p>Escribe palabras clave y el género. Crearé una historia con lo que tú imagines.</p>
+    <form action="https://formspree.io/f/xovdjobg" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre (opcional)">
+      <input type="text" name="palabras" placeholder="Palabras clave" required>
+      <select name="genero" required>
+        <option value="">Elige un género</option>
+        <option value="aventura">Aventura</option>
+        <option value="romántico">Romántico</option>
+        <option value="misterio">Misterio</option>
+        <option value="fantasía">Fantasía</option>
+        <option value="terror">Terror</option>
+      </select>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Hecho con imaginación desde Gran Canaria.</p>
+  </footer>
+
+</body>
+</html>
